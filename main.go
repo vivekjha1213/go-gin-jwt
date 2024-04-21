@@ -24,6 +24,7 @@ func main() {
 	// Set up routes for authentication and user-related functionalities
 	routes.AuthRoutes(router)
 	routes.UserRoutes(router)
+	routes.LoadRoutes(router)
 
 
 	router.GET("/api-1",func( c *gin.Context){
